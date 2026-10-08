@@ -1,0 +1,125 @@
+/**********************************************************************************************************************
+ *  COPYRIGHT
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  \verbatim
+ *
+ *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+ *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+ *                All other rights remain with Vector Informatik GmbH.
+ *  \endverbatim
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  FILE DESCRIPTION
+ *  -------------------------------------------------------------------------------------------------------------------
+ *             File:  Rte.oil
+ *           Config:  Tc275_Basic.dpa
+ *      ECU-Project:  Tc275_Basic
+ *
+ *        Generator:  MICROSAR RTE Generator Version 4.21.0
+ *                    RTE Core Version 1.21.0
+ *          License:  CBD1600956
+ *
+ *      Description:  OIL-File containing project specific OS definitions for the MICROSAR RTE
+ *********************************************************************************************************************/
+
+/**********************************************************************************************************************
+ *                                              P L E A S E   N O T E
+ *
+ * The attributes in this file must not be changed. Missing mandatory attributes must be set in the including file.
+ * They are presented as a comment in the corresponding object definition containing a list of all legal values.
+ *********************************************************************************************************************/
+
+   TASK App_10ms_Task_Core0 {
+      ACTIVATION = 1:"@RO@";
+      PRIORITY = 0:"@RO@";
+      SCHEDULE = FULL:"@RO@";
+// TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
+      AUTOSTART = FALSE:"@RO@";
+      EVENT = Rte_Ev_Run_Test_Led_Test_Runable_1s:"@RO@";
+   }:"@RO@@NR@";
+
+   ALARM Rte_Al_TE_Test_Led_Test_Runable_1s {
+      COUNTER = SystemTimer_Core0;
+      ACTION = SETEVENT
+      {
+         TASK = App_10ms_Task_Core0;
+         EVENT = Rte_Ev_Run_Test_Led_Test_Runable_1s;
+      }:"@ROC@";
+      AUTOSTART = FALSE:"@RO@";
+   }:"@RO@@NR@";
+
+   TASK App_10ms_Task_Core1 {
+      ACTIVATION = 1:"@RO@";
+      PRIORITY = 0:"@RO@";
+      SCHEDULE = FULL:"@RO@";
+// TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
+      AUTOSTART = FALSE:"@RO@";
+      ACCESSING_APPLICATION = SystemApplication_OsCore0;
+   }:"@RO@@NR@";
+
+   TASK App_10ms_Task_Core2 {
+      ACTIVATION = 1:"@RO@";
+      PRIORITY = 0:"@RO@";
+      SCHEDULE = FULL:"@RO@";
+// TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
+      AUTOSTART = FALSE:"@RO@";
+      ACCESSING_APPLICATION = SystemApplication_OsCore0;
+   }:"@RO@@NR@";
+
+   TASK Bsw_5ms_Task_Core0 {
+      ACTIVATION = 1:"@RO@";
+      PRIORITY = 0:"@RO@";
+      SCHEDULE = NON:"@RO@";
+// TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
+      AUTOSTART = FALSE:"@RO@";
+   }:"@RO@@NR@";
+
+   ALARM Rte_Al_TE2_Bsw_5ms_Task_Core0_0_10ms {
+      COUNTER = SystemTimer_Core0;
+      ACTION = ACTIVATETASK
+      {
+         TASK = Bsw_5ms_Task_Core0;
+      }:"@ROC@";
+      AUTOSTART = FALSE:"@RO@";
+   }:"@RO@@NR@";
+
+   EVENT Rte_Ev_Run_Test_Led_Test_Runable_1s {
+      MASK = AUTO;
+   }:"@ROC@@NR@";
+
+
+   APPLICATION SystemApplication_OsCore0 {
+      TRUSTED = TRUE;
+// Add the following four attributes according to your needs.
+// Note: They do not have a default value and are therefore necessary in the configuration.
+//      STARTUPHOOK = FALSE;
+//      SHUTDOWNHOOK = FALSE;
+//      ERRORHOOK = FALSE;
+//      HAS_RESTARTTASK = FALSE;
+      TASK = App_10ms_Task_Core0;
+      ALARM = Rte_Al_TE_Test_Led_Test_Runable_1s;
+      TASK = Bsw_5ms_Task_Core0;
+      ALARM = Rte_Al_TE2_Bsw_5ms_Task_Core0_0_10ms;
+      CORE = 0;
+  };
+
+   APPLICATION SystemApplication_OsCore1 {
+      TRUSTED = TRUE;
+// Add the following four attributes according to your needs.
+// Note: They do not have a default value and are therefore necessary in the configuration.
+//      STARTUPHOOK = FALSE;
+//      SHUTDOWNHOOK = FALSE;
+//      ERRORHOOK = FALSE;
+//      HAS_RESTARTTASK = FALSE;
+      CORE = 1;
+  };
+
+   APPLICATION SystemApplication_OsCore2 {
+      TRUSTED = TRUE;
+// Add the following four attributes according to your needs.
+// Note: They do not have a default value and are therefore necessary in the configuration.
+//      STARTUPHOOK = FALSE;
+//      SHUTDOWNHOOK = FALSE;
+//      ERRORHOOK = FALSE;
+//      HAS_RESTARTTASK = FALSE;
+      CORE = 2;
+  };

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.tasking.config.ctc.abs.debug.135800941">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.tasking.config.ctc.abs.debug.135800941" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.tasking.managedbuilder.TASKING_IHEX" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.tasking.managedbuilder.TASKING_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.tasking.managedbuilder.TASKING_SRECORD" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.tasking.managedbuilder.TskRegexErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="Tc275_Basic" buildArtefactType="com.tasking.ctc.buildArtefactType.elf" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=com.tasking.ctc.buildArtefactType.elf" cleanCommand="&quot;${PRODDIR}/bin/rm&quot; -rf" description="" id="com.tasking.config.ctc.abs.debug.135800941" name="Debug" parent="com.tasking.config.ctc.abs.debug">
+					<folderInfo id="com.tasking.config.ctc.abs.debug.135800941." name="/" resourcePath="">
+						<toolChain id="com.tasking.ctc.abs.debug.1186697035" name="TASKING VX-toolset for TriCore" superClass="com.tasking.ctc.abs.debug">
+							<option id="com.tasking.ctc.pluginVersion.935611237" name="Plugin version" superClass="com.tasking.ctc.pluginVersion" value="1.238.0.0" valueType="string"/>
+							<option id="com.tasking.ctc.prodDir.99407477" name="Product directory:" superClass="com.tasking.ctc.prodDir" value="${eclipse_home}/.." valueType="string"/>
+							<option id="com.tasking.ctc.cpu.1387412722" name="Processor:" superClass="com.tasking.ctc.cpu" value="tc27x" valueType="string"/>
+							<option id="com.tasking.ctc.coreSelection.434593642" name="Use core:" superClass="com.tasking.ctc.coreSelection" value="vtc" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="com.tasking.managedbuilder.TASKING_ELF;com.tasking.managedbuilder.TASKING_SRECORD;com.tasking.managedbuilder.TASKING_IHEX" id="com.tasking.ctc.platform.abs.debug.75673960" name="Debug" osList="" superClass="com.tasking.ctc.platform.abs.debug"/>
+							<builder buildPath="${workspace_loc:/Tc275_Basic}/Debug" id="com.tasking.ctc.builder.abs.debug.308902817" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="TASKING TriCore Makefile generator" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.tasking.ctc.builder.abs.debug"/>
+							<tool id="com.tasking.ctc.cc.abs.debug.618059459" name="C/C++ Compiler" superClass="com.tasking.ctc.cc.abs.debug">
+								<option id="com.tasking.ctc.cc.pr36858.787451861" name="workaround for PR36858" superClass="com.tasking.ctc.cc.pr36858" value="true" valueType="string"/>
+								<option id="com.tasking.ctc.cc.noTaskingSfr.602092424" superClass="com.tasking.ctc.cc.noTaskingSfr" value="false" valueType="boolean"/>
+								<option id="com.tasking.ctc.cc.definedSymbols.718775651" superClass="com.tasking.ctc.cc.definedSymbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="BRS_COMP_TASKING"/>
+								</option>
+								<option id="com.tasking.ctc.cc.includePaths.1754919208" superClass="com.tasking.ctc.cc.includePaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/00_ASW}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Gen/GenData}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Gen/GenData/Components}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Gen/GenData/ContractPhase}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Gen/GenData/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Gen/GenData/mak}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Gen/GenData/Make}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Gen/GenData/RteCache}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Gen/GenData/RteCache/504704712}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Gen/Source}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Gen/Source/RteCache}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Gen/Source/RteCache/-711312344}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Gen/Source/Test_Led}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Src/BswM}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Src/BswM/mak}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Src/Common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Src/Det}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Src/Det/mak}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Src/EcuM}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Src/EcuM/mak}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Src/Os}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Src/Os/mak}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Src/VStdLib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/01_BSW/Src/VStdLib/mak}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/02_CDD}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Gen/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Gen/mak}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Gen/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Dio}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Dio/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Dio/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/General}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/General/tricore}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/General/tricore/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/General/tricore/inc/TC27xD}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Intergration_general}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Intergration_general/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Intergration_general/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Irq}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Irq/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Irq/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Mcal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Mcal/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Mcal/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Mcu}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Mcu/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Mcu/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Port}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Port/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/03_MCAL/Src/Port/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/04_StartUp}&quot;"/>
+								</option>
+								<option id="com.tasking.ctc.cc.iso.597169789" superClass="com.tasking.ctc.cc.iso" value="com.tasking.ctc.cc.iso.c99" valueType="enumerated"/>
+								<option id="com.tasking.ctc.cc.fpmodel.1740192711" superClass="com.tasking.ctc.cc.fpmodel" value="com.tasking.ctc.cc.fpmodel.custom" valueType="enumerated"/>
+								<option id="com.tasking.ctc.c.allocation.nearSize.2137145835" superClass="com.tasking.ctc.c.allocation.nearSize" value="0" valueType="string"/>
+								<option id="com.tasking.ctc.cc.optimize.852736463" superClass="com.tasking.ctc.cc.optimize" value="com.tasking.ctc.cc.optimize.0" valueType="enumerated"/>
+								<inputType id="com.tasking.ctc.cppInputType.1127387680" name="C++" superClass="com.tasking.ctc.cppInputType"/>
+								<inputType id="com.tasking.ctc.cpp.cInputType.62745982" name="C" superClass="com.tasking.ctc.cpp.cInputType"/>
+								<inputType id="com.tasking.ctc.cc.msInputType.1040543161" name="MS" superClass="com.tasking.ctc.cc.msInputType"/>
+							</tool>
+							<tool id="com.tasking.ctc.as.abs.debug.588950582" name="Assembler" superClass="com.tasking.ctc.as.abs.debug">
+								<inputType id="com.tasking.ctc.asmInputType.931989060" name="ASM" superClass="com.tasking.ctc.asmInputType"/>
+							</tool>
+							<tool id="com.tasking.ctc.lk.abs.debug.280530253" name="Linker" superClass="com.tasking.ctc.lk.abs.debug">
+								<option id="com.tasking.ctc.lk.noDefaultLibraries.1234264843" superClass="com.tasking.ctc.lk.noDefaultLibraries" value="false" valueType="boolean"/>
+								<option id="com.tasking.ctc.lk.noRescan.1608518526" superClass="com.tasking.ctc.lk.noRescan" value="false" valueType="boolean"/>
+								<option id="com.tasking.ctc.lk.lslFile.409170654" superClass="com.tasking.ctc.lk.lslFile" value="..\01_BSW\Gen\Source\vLinkGen_Template.lsl" valueType="string"/>
+								<option id="com.tasking.ctc.lk.mapFile.mapFile.1750742908" superClass="com.tasking.ctc.lk.mapFile.mapFile" value="true" valueType="boolean"/>
+								<option id="com.tasking.ctc.lk.userProvidedInitCode.1978933170" superClass="com.tasking.ctc.lk.userProvidedInitCode" value="true" valueType="boolean"/>
+								<option id="com.tasking.ctc.lk.outputFormat.ihex.839810283" superClass="com.tasking.ctc.lk.outputFormat.ihex" value="true" valueType="boolean"/>
+								<inputType id="com.tasking.ctc.lkObjInputType.29217607" name="OBJ" superClass="com.tasking.ctc.lkObjInputType"/>
+								<inputType id="com.tasking.ctc.lkLibInputType.302566037" name="LIB" superClass="com.tasking.ctc.lkLibInputType"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="com.tasking.flash.settings"/>
+			<storageModule moduleId="com.tasking.toolInfo">
+				<toolInfo>TASKING VX-toolset for TriCore: control program v6.3r1 Build 19041558</toolInfo>
+				<toolInfo>TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262</toolInfo>
+				<toolInfo>TASKING VX-toolset for TriCore: assembler v6.3r1 Build 19041558</toolInfo>
+				<toolInfo>TASKING program builder v6.3r1 Build 19041558</toolInfo>
+				<toolInfo>TASKING VX-toolset for TriCore: object linker v6.3r1 Build 21092262</toolInfo>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="com.tasking.config.ctc.abs.release.1211572321">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.tasking.config.ctc.abs.release.1211572321" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.tasking.managedbuilder.TASKING_IHEX" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.tasking.managedbuilder.TASKING_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.tasking.managedbuilder.TASKING_SRECORD" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.tasking.managedbuilder.TskRegexErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="Tc275_Basic" buildArtefactType="com.tasking.ctc.buildArtefactType.elf" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=com.tasking.ctc.buildArtefactType.elf" cleanCommand="&quot;${PRODDIR}/bin/rm&quot; -rf" description="" id="com.tasking.config.ctc.abs.release.1211572321" name="Release" parent="com.tasking.config.ctc.abs.release">
+					<folderInfo id="com.tasking.config.ctc.abs.release.1211572321." name="/" resourcePath="">
+						<toolChain id="com.tasking.ctc.abs.release.1950713565" name="TASKING VX-toolset for TriCore" superClass="com.tasking.ctc.abs.release">
+							<option id="com.tasking.ctc.pluginVersion.1984543883" name="Plugin version" superClass="com.tasking.ctc.pluginVersion" value="1.238.0.0" valueType="string"/>
+							<option id="com.tasking.ctc.prodDir.1733316983" name="Product directory:" superClass="com.tasking.ctc.prodDir" value="${eclipse_home}/.." valueType="string"/>
+							<option id="com.tasking.ctc.cpu.717920693" name="Processor:" superClass="com.tasking.ctc.cpu" value="tc27x" valueType="string"/>
+							<option id="com.tasking.ctc.coreSelection.1034048824" name="Use core:" superClass="com.tasking.ctc.coreSelection" value="vtc" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="com.tasking.managedbuilder.TASKING_ELF;com.tasking.managedbuilder.TASKING_SRECORD;com.tasking.managedbuilder.TASKING_IHEX" id="com.tasking.ctc.platform.abs.release.1492765025" name="Release" osList="" superClass="com.tasking.ctc.platform.abs.release"/>
+							<builder buildPath="${workspace_loc:/Tc275_Basic}/Release" id="com.tasking.ctc.builder.abs.debug.1259390654" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="TASKING TriCore Makefile generator" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.tasking.ctc.builder.abs.debug"/>
+							<tool id="com.tasking.ctc.cc.abs.release.1899285960" name="C/C++ Compiler" superClass="com.tasking.ctc.cc.abs.release">
+								<option id="com.tasking.ctc.cc.pr36858.1381921052" name="workaround for PR36858" superClass="com.tasking.ctc.cc.pr36858" value="true" valueType="string"/>
+								<inputType id="com.tasking.ctc.cppInputType.952053229" name="C++" superClass="com.tasking.ctc.cppInputType"/>
+								<inputType id="com.tasking.ctc.cpp.cInputType.616796854" name="C" superClass="com.tasking.ctc.cpp.cInputType"/>
+								<inputType id="com.tasking.ctc.cc.msInputType.119145188" name="MS" superClass="com.tasking.ctc.cc.msInputType"/>
+							</tool>
+							<tool id="com.tasking.ctc.as.abs.release.2000806021" name="Assembler" superClass="com.tasking.ctc.as.abs.release">
+								<inputType id="com.tasking.ctc.asmInputType.2092864833" name="ASM" superClass="com.tasking.ctc.asmInputType"/>
+							</tool>
+							<tool id="com.tasking.ctc.lk.abs.release.1086451183" name="Linker" superClass="com.tasking.ctc.lk.abs.release">
+								<inputType id="com.tasking.ctc.lkObjInputType.667438701" name="OBJ" superClass="com.tasking.ctc.lkObjInputType"/>
+								<inputType id="com.tasking.ctc.lkLibInputType.1719848390" name="LIB" superClass="com.tasking.ctc.lkLibInputType"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="sync_on_halt.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="com.tasking.flash.settings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="Tc275_Basic.com.tasking.ctc.target.abs.982005622" name="TASKING TriCore Application" projectType="com.tasking.ctc.target.abs"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.tasking.config.ctc.abs.debug.135800941;com.tasking.config.ctc.abs.debug.135800941.">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.tasking.ctc.TskTriCoreScannerInfo"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.tasking.config.ctc.abs.release.1211572321;com.tasking.config.ctc.abs.release.1211572321.">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.tasking.ctc.TskTriCoreScannerInfo"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.core.language.mapping">
+		<project-mappings>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cHeader" language="com.tasking.ctc.clanguage"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cSource" language="com.tasking.ctc.clanguage"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxHeader" language="com.tasking.ctc.cpplanguage"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxSource" language="com.tasking.ctc.cpplanguage"/>
+		</project-mappings>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/Tc275_Basic"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/Tc275_Basic"/>
+		</configuration>
+	</storageModule>
+</cproject>

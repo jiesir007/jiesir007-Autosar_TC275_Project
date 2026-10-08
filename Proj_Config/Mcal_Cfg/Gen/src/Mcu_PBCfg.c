@@ -1,0 +1,161 @@
+/*******************************************************************************
+**                                                                            **
+** Copyright (C) Infineon Technologies (2018)                                 **
+**                                                                            **
+** All rights reserved.                                                       **
+**                                                                            **
+** This document contains proprietary information belonging to Infineon       **
+** Technologies. Passing on and copying of this document, and communication   **
+** of its contents is not permitted without prior written authorization.      **
+**                                                                            **
+********************************************************************************
+**                                                                            **
+**  FILENAME  : Mcu_PBCfg.c                                                   **
+**                                                                            **
+**  $CC VERSION : \main\90 $                                                 **
+**                                                                            **
+**  DATE, TIME: 2026-09-29, 21:40:27                                          **
+**                                                                            **
+**  GENERATOR : Build b141014-0350                                            **
+**                                                                            **
+**  AUTHOR    : DL-AUTOSAR-Engineering                                        **
+**                                                                            **
+**  VENDOR    : Infineon Technologies                                         **
+**                                                                            **
+**  DESCRIPTION  : MCU configuration generated out of ECU configuration       **
+**                 file  (Mcu.bmd)                                            **
+**                                                                            **
+**  MAY BE CHANGED BY USER [yes/no]: no                                       **
+**                                                                            **
+*******************************************************************************/
+
+/*******************************************************************************
+**                       Includes                                             **
+*******************************************************************************/
+
+/* Include module header file */
+#include "Mcu.h"
+/*******************************************************************************
+**                      Private Macro Definitions                             **
+*******************************************************************************/
+
+/*
+   Configuration Options:
+   For the clock setting configuration
+   PLL status
+*/
+
+/* Normal Mode */
+#define MCU_NORMAL_MODE        (0x01U)
+
+/******************************************************************************
+**                      Global Constant Definitions                           **
+*******************************************************************************/
+
+/* Memory Mapping the configuration constant */
+#define MCU_START_SEC_POSTBUILDCFG
+#include "MemMap.h"
+
+/*
+   Configuration : Mcu_ConfigType
+   For Mcu_ConfigType: MCU specific configuration ID
+   This id corresponds to the container name of the McuConfiguration.
+   Use this as the parameter for API: Mcu_Init
+    - MCU035 : Configuration of MCU
+*/
+/*
+                     Container: McuClockSettingConfig
+                     Multilplicity : 1 - *
+*/
+
+static const Mcu_ClockCfgType Mcu_kClockConfiguration0[] =
+{
+    /*McuClockSettingConfig_0*/
+  {
+    {
+      /*K2 divider steps*/
+      3U, /* 120.0 MHz */ 
+      2U, /* 160.0 MHz  */
+      2U, /* 160.0 MHz  */
+      2U,  /* 160.0 MHz */ 
+      0U,
+      0U,
+      0U,
+      0U,
+    },
+    {
+      300U,  /* ramp up delay for K2 div step 1*/
+      400U, /* ramp up delay for K2 div step 2*/
+      400U, /* ramp up delay for K2 div step 3*/
+      400U, /* ramp up delay for K2 div step 4*/
+      0U, /* ramp up delay for K2 div step 5*/
+      0U, /* ramp up delay for K2 div step 6*/
+      0U, /* ramp up delay for K2 div step 7*/
+      0U, /* ramp up delay for K2 div step 8*/
+    },
+
+    {
+      1U,                              /* K1DIV */
+      5U,                              /* K3DIV */
+      47U,                             /* NDIV */
+      1U,                              /* PDIV */
+      2U,                              /* K2DivSteps */
+      MCU_NORMAL_MODE,                 /* NORMAL/PRESCALER MODE */
+      0U                               /* reserved */
+    },
+
+    {
+      19U,                             /* PLL ERAY N divider */
+      4U,                              /* PLL ERAY K2 divider */
+      4U,                              /* PLL ERAY K3 divider */
+      0U,                              /* PLL ERAY P Divider */
+      0U                               /* reserved */
+    },
+
+    /*
+      SRI Clock     = 160.0MHz
+      SPB Clock     = 80.0MHz
+    */
+    (uint32)0x02220122U, /* CCUCON0 Register Configuration*/
+    (uint32)0x08212212U, /* CCUCON1 Register Configuration*/
+    (uint32)0x00000002U, /* CCUCON2 Register Configuration*/
+    (uint32)0x00000041U,/* CCUCON5 Register Configuration*/
+    (uint32)0x00000020U, /* CCUCON6 Register Configuration*/
+    (uint32)0x00000020U, /* CCUCON7 Register Configuration*/
+    (uint32)0x00000020U,  /* CCUCON8 Register Configuration*/
+    10U, /* Ramp to PLL delay configured in us */
+
+  }/*McuClockSettingConfig_0*/
+
+};
+
+
+/* Main MCU Configuration Structure */
+const Mcu_ConfigType Mcu_ConfigRoot[1] =
+{
+  {
+    /*McuModuleConfiguration_0*/
+    
+    /*Mcu Clock Configuration*/
+    Mcu_kClockConfiguration0,
+    /*Ptr to Gtm_ConfigRoot*/
+    &Gtm_ConfigRoot[0],
+    /* Reset request configuration  */
+    /* 
+     * Upper 16-bits contain ARSTDIS register configuration value, 
+     * lower 16-bits contain RSTCON register configuration value
+     */
+    0x0U,
+    /* Total number of Clock settings */
+    ((Mcu_ClockType)1U),
+    /* Total number of RAM Sectors */
+    ((Mcu_RamSectionType)0U),
+    /* The maximum mode that is supported by this module instance */
+    (MCU_MODE_MAX0),
+    /* Ptr to Standby Mode in config structure */
+    NULL_PTR,
+  }
+};
+
+#define MCU_STOP_SEC_POSTBUILDCFG
+#include "MemMap.h"

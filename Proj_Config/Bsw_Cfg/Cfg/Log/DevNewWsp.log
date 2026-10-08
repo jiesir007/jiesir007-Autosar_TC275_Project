@@ -1,0 +1,15 @@
+﻿28 Sep 2026 17:51:15 - Saving file AdminDataTemplates.xml (D:\Autosar\CodePackage\Autosar_TC275_Project2\Proj_Config\Bsw_Cfg\Cfg\Config\Developer\AdminDataTemplates.xml)
+28 Sep 2026 17:51:15 - Saving file Tc275_Basic.dcf (D:\Autosar\CodePackage\Autosar_TC275_Project2\Proj_Config\Bsw_Cfg\Cfg\Config\Developer\Tc275_Basic.dcf)
+28 Sep 2026 17:51:15 - Start import
+28 Sep 2026 17:51:15 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.6\Bin\Predefines\StandardPackages_AR4.arxml).
+28 Sep 2026 17:51:16 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.6\Bin\Predefines\ServicePortInterfaces_4.4.0.arxml).
+28 Sep 2026 17:51:16 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.6\Bin\Predefines\ApplicationPortInterfaces_4.4.0.arxml).
+28 Sep 2026 17:51:16 - Importing file (D:\Autosar\CodePackage\Autosar_TC275_Project2\Proj_Config\Bsw_Cfg\Cfg\Config\AUTOSAR\PlatformTypes_AR4.arxml).
+28 Sep 2026 17:51:16 - Merging imported data
+28 Sep 2026 17:51:17 - Finished import
+28 Sep 2026 17:51:17 - Saving file ProfileSettings.xml (D:\Autosar\CodePackage\Autosar_TC275_Project2\Proj_Config\Bsw_Cfg\Cfg\Config\Developer\ProfileSettings.xml)
+28 Sep 2026 17:51:17 - Saving file Packages.arxml (D:\Autosar\CodePackage\Autosar_TC275_Project2\Proj_Config\Bsw_Cfg\Cfg\Config\Developer\Packages.arxml)
+28 Sep 2026 17:51:17 - Saving file DataTypes.arxml (D:\Autosar\CodePackage\Autosar_TC275_Project2\Proj_Config\Bsw_Cfg\Cfg\Config\Developer\DataTypes.arxml)
+28 Sep 2026 17:51:17 - Saving file PortInterfaces.arxml (D:\Autosar\CodePackage\Autosar_TC275_Project2\Proj_Config\Bsw_Cfg\Cfg\Config\Developer\PortInterfaces.arxml)
+28 Sep 2026 17:51:17 - Saving file Tc275_Basic.arxml (D:\Autosar\CodePackage\Autosar_TC275_Project2\Proj_Config\Bsw_Cfg\Cfg\Config\Developer\ECUProjects\Tc275_Basic.arxml)
+28 Sep 2026 17:51:17 - Saving file Tc275_Basic.dcf (D:\Autosar\CodePackage\Autosar_TC275_Project2\Proj_Config\Bsw_Cfg\Cfg\Config\Developer\Tc275_Basic.dcf)

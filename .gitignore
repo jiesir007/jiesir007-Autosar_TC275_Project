@@ -1,0 +1,17 @@
+# 编译输出目录（包含 .o/.src/.elf/.map/.hex 等，可达 GB 级）
+Proj_Code/Debug/
+
+# 常见编译产物（防止以后误提交）
+*.o
+*.src
+*.elf
+*.map
+*.hex
+*.lst
+*.d
+*.opt
+*.mk.log
+
+# Eclipse / AURIX Development Studio 本地工作区状态
+.metadata/
+*.launch
